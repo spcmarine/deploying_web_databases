@@ -1,0 +1,10 @@
+{
+  "name": "dangibson-message-database",
+  "domain": false,
+  "hostname": "dangibson-message-database",
+  "image": "postgres:12",
+  "env": {
+    "POSTGRES_PASSWORD": "@dangibson-postgres-password"
+  },
+  "volumes": ["dangibson_message_database_volume:/var/lib/postgresql/data"]
+}
